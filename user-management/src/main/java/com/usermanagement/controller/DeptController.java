@@ -35,7 +35,7 @@ public class DeptController {
             //IO.println(depts);
             // 数据为空 - 返回成功但数据为空列表
             if (depts == null || depts.isEmpty()) {
-                log.info("部门列表为空");
+                log.info("部门列表为空...");
                 return ResponseEntity.ok(ApiResponse.success("暂无部门数据", Collections.emptyList()));
             }
             return ResponseEntity.ok(ApiResponse.success(depts));
